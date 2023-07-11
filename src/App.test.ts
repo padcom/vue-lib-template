@@ -1,10 +1,20 @@
-import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
+import { describe, beforeEach, it, expect } from 'vitest'
+import { mount, VueWrapper } from '@vue/test-utils'
 
 import App from './App.vue'
 
 describe('App', () => {
+  let app: VueWrapper<InstanceType<typeof App>>
+
+  beforeEach(() => {
+    app = mount(App)
+  })
+
   it('will mount', () => {
-    expect(mount(App).text()).toContain('Hello, world!')
+    expect(app.text()).toContain('Hello, world!')
+  })
+
+  it('will have hello message', () => {
+    expect(app.vm.getMessage()).toBe('Hello, world!')
   })
 })

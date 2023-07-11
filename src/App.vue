@@ -8,6 +8,14 @@
 import { ref } from 'vue'
 
 const message = ref('Hello, world!')
+
+function getMessage() {
+  return message.value
+}
+
+defineExpose({
+  getMessage,
+})
 </script>
 
 <style lang="postcss" scoped>
