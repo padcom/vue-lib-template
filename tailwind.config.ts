@@ -2,7 +2,10 @@ import { type Config } from 'tailwindcss'
 
 import typography from '@tailwindcss/typography'
 
+import theme from './tailwind.theme'
+
 export default {
+  theme,
   content: [
     './src/**/*.{css,vue}',
   ],
@@ -10,10 +13,10 @@ export default {
     typography(),
   ],
   future: {
-    disableColorOpacityUtilitiesByDefault: true,
-    respectDefaultRingColorOpacity: true,
+    // disableColorOpacityUtilitiesByDefault: true,
+    // respectDefaultRingColorOpacity: true,
   },
   experimental: {
-    optimizeUniversalDefaults: true,
+    // optimizeUniversalDefaults: true,
   },
 } as Config

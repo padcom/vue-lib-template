@@ -3,6 +3,7 @@
   <article class="prose">
     <h1 class="header">{{ message }}</h1>
     <p class="note">Now, delete me and get to work!</p>
+    <button type="button" class="btn">Say hello!</button>
   </article>
 </template>
 
@@ -17,9 +18,9 @@ defineExpose({
 </script>
 
 <style lang="postcss" scoped>
-article {
-  @apply h-screen max-w-screen-lg;
-  @apply bg-slate-200;
+.prose {
+  @apply h-screen max-w-none;
+  @apply bg-slate-100;
   @apply text-center mx-auto;
 }
 
@@ -29,6 +30,6 @@ article {
 }
 
 .note {
-  @apply text-sm text-gray-500 font-extralight;
+  @apply text-gray-500 text-sm font-extralight;
 }
 </style>
