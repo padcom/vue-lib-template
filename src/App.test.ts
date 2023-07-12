@@ -15,6 +15,6 @@ describe('App', () => {
   })
 
   it('will have hello message', () => {
-    expect(app.vm.getMessage()).toBe('Hello, world!')
+    expect(app.vm.message).toBe('Hello, world!')
   })
 })
