@@ -1,7 +1,9 @@
 <!-- eslint-disable max-len -->
 <template>
-  <h2 class="header">{{ message }}</h2>
-  <p class="note">Now, delete me and get to work!</p>
+  <article class="prose">
+    <h1 class="header">{{ message }}</h1>
+    <p class="note">Now, delete me and get to work!</p>
+  </article>
 </template>
 
 <script lang="ts" setup>
@@ -19,14 +21,18 @@ defineExpose({
 </script>
 
 <style lang="postcss" scoped>
+article {
+  @apply h-screen max-w-screen-lg;
+  @apply bg-slate-200;
+  @apply text-center mx-auto;
+}
+
 .header {
-  @apply my-4;
-  @apply text-center;
-  @apply text-3xl font-mono font-bold;
+  @apply font-mono;
+  @apply pt-10;
 }
 
 .note {
-  @apply text-center;
   @apply text-sm text-gray-500 font-extralight;
 }
 </style>
