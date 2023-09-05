@@ -10,11 +10,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const message = ref('Hello, world!')
-
-defineExpose({
-  message,
-})
+const message = ref(import.meta.env.VITE_APP_EXAMPLE)
 </script>
 
 <style lang="postcss" scoped>
