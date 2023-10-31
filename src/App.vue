@@ -1,31 +1,29 @@
-<!-- eslint-disable max-len -->
 <template>
-  <article class="prose">
-    <h1 class="header">{{ message }}</h1>
-    <p class="note">Now, delete me and get to work!</p>
-    <button type="button" class="btn">Say hello!</button>
-  </article>
+  <HelloWorld message="from library" />
+  <p class="note">{{ t('Now, delete me and get to work!') }}</p>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import HelloWorld from './components/HelloWorld.vue'
 
-const message = ref(import.meta.env.VITE_APP_EXAMPLE)
+// t()  - use local or application translation if local translation does not exist
+const { t } = useI18n()
 </script>
 
+<i18n>
+{
+  "pl": {
+    "Now, delete me and get to work!": "A teraz mnie usuń i zabieraj się do roboty!"
+  },
+  "de": {
+    "Now, delete me and get to work!": "Jetzt entferne mich und mach dich an die Arbeit!"
+  }
+}
+</i18n>
+
 <style lang="postcss" scoped>
-.prose {
-  @apply h-screen max-w-none;
-  @apply bg-slate-100;
-  @apply text-center mx-auto;
-}
-
-.header {
-  @apply font-mono;
-  @apply pt-10;
-}
-
 .note {
-  @apply text-gray-500 text-sm font-extralight;
+  @apply mt-10;
 }
 </style>

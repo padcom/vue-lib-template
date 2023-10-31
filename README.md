@@ -1,3 +1,0 @@
-# Vue app
-
-Tell everyone something interesting about this app...

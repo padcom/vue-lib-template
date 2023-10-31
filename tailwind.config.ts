@@ -7,8 +7,12 @@ import theme from './tailwind.theme'
 export default {
   theme,
   content: [
-    './src/**/*.{css,vue}',
+    './main.css',
+    './components/**/*.{css,vue}',
   ],
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [
     typography(),
   ],
@@ -17,6 +21,6 @@ export default {
     // respectDefaultRingColorOpacity: true,
   },
   experimental: {
-    // optimizeUniversalDefaults: true,
+    optimizeUniversalDefaults: true,
   },
 } as Config
