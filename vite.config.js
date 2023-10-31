@@ -60,6 +60,9 @@ export default defineConfig({
   },
   test: {
     environment: 'jsdom',
+    setupFiles: [
+      './vitest.setup.js',
+    ],
     coverage: {
       enabled: true,
       reporter: ['text', 'lcov'],
