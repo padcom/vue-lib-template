@@ -1,5 +1,6 @@
 /* eslint-env node */
-import { defineConfig } from 'vite'
+import { fileURLToPath } from 'url'
+import { defineConfig } from 'vitest/config'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
@@ -24,7 +25,9 @@ export default defineConfig({
         },
       },
     }),
-    i18n(),
+    i18n({
+      runtimeOnly: true,
+    }),
     eslint({
       lintOnStart: false,
     }),
