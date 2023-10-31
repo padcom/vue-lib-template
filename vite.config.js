@@ -1,5 +1,4 @@
 /* eslint-env node */
-import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitest/config'
 
 import svg from 'vite-svg-loader'
