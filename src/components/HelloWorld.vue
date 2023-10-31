@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello, world! {{ message }}</h1>
+  <h1 class="font-black">Hello, world! {{ message }}</h1>
 </template>
 
 <script lang="ts" setup>

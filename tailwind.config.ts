@@ -7,8 +7,8 @@ import theme from './tailwind.theme'
 export default {
   theme,
   content: [
-    './main.css',
-    './components/**/*.{css,vue}',
+    './src/tailwind.css',
+    './src/components/**/*.{css,vue}',
   ],
   corePlugins: {
     preflight: false,
