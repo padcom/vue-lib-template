@@ -3,7 +3,7 @@ import { defineConfig } from 'vitest/config'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
-import i18n from '@intlify/unplugin-vue-i18n/vite'
+import i18n from '@padcom/vite-plugin-vue-i18n'
 import eslint from 'vite-plugin-eslint'
 import dts from 'vite-plugin-dts'
 import nesting from 'tailwindcss/nesting'
@@ -41,12 +41,12 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'vue',
-        'vue-i18n',
+        '@padcom/vue-i18n',
       ],
       output: {
         globals: {
           'vue': 'vue',
-          'vue-i18n': 'vueI18n',
+          '@padcom/vue-i18n': 'vueI18n',
         },
       },
     },

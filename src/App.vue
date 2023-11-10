@@ -4,8 +4,10 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
+import { createI18Context, useI18n } from '@padcom/vue-i18n'
 import HelloWorld from './components/HelloWorld.vue'
+
+createI18Context({})
 
 // t()  - use local or application translation if local translation does not exist
 const { t } = useI18n()
