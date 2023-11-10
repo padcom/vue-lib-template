@@ -24,9 +24,7 @@ export default defineConfig({
         },
       },
     }),
-    i18n({
-      runtimeOnly: true,
-    }),
+    i18n(),
     eslint({
       lintOnStart: false,
     }),
