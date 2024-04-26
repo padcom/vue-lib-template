@@ -1,9 +1,9 @@
-import { type Config } from 'tailwindcss'
-
+/* eslint-env node */
 import typography from '@tailwindcss/typography'
 
 import theme from './tailwind.theme'
 
+/** @type {import('tailwindcss').Config} */
 export default {
   theme,
   content: [
@@ -26,4 +26,4 @@ export default {
   experimental: {
     optimizeUniversalDefaults: true,
   },
-} as Config
+}

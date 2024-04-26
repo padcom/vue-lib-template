@@ -2,7 +2,6 @@
   "recommendations": [
     "bradlc.vscode-tailwindcss",
     "alfredbirk.tailwind-documentation",
-    "vue.vscode-typescript-vue-plugin",
     "hollowtree.vue-snippets",
     "vue.volar",
     "cpylua.language-postcss",
