@@ -2,6 +2,7 @@
   "name": "@padcom/vuejs-lib",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/common.umd.js",
   "module": "./dist/common.mjs",
   "types": "./dist/types.d.ts",
@@ -26,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@padcom/vue-i18n": "^0.6.0",
+    "@vueuse/core": "^10.9.0",
     "vue": "^3.4.25"
   },
   "devDependencies": {
@@ -37,7 +39,6 @@
     "@vitest/coverage-v8": "^1.5.2",
     "@vue/test-utils": "^2.4.5",
     "@vue/tsconfig": "^0.5.1",
-    "@vueuse/core": "^10.9.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.56.0",
     "jsdom": "^24.0.0",
