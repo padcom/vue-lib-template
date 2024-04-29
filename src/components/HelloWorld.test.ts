@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { useI18n } from '@padcom/vue-i18n'
+import { useI18n } from '@/composables/i18n'
 
 import HelloWorld from './HelloWorld.vue'
 

@@ -1,5 +1,6 @@
 /* eslint-env node */
 import { defineConfig } from 'vitest/config'
+import { fileURLToPath } from 'url'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
@@ -30,6 +31,11 @@ export default defineConfig({
     }),
     dts({ insertTypesEntry: true, rollupTypes: true, logLevel: 'error' }),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   build: {
     lib: {
       entry: './src/index.ts',

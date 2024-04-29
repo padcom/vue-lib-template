@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from '@padcom/vue-i18n'
+import { useI18n } from '@/composables/i18n'
 import HelloWorld from './components/HelloWorld.vue'
 
 // t()  - use local or application translation if local translation does not exist

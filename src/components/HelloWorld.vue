@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from '@padcom/vue-i18n'
+import { useI18n } from '@/composables/i18n'
 
 defineProps({
   message: { type: String, default: 'from HelloWorld.vue' },
