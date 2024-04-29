@@ -14,6 +14,10 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "start": "vite",
     "test": "vitest run --environment jsdom --root . --coverage",
