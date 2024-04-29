@@ -4,11 +4,15 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from '@/composables/i18n'
 import HelloWorld from './components/HelloWorld.vue'
+import { useI18n } from '@/composables/i18n'
+import { provideExample } from '@/composables/example'
 
 // t()  - use local or application translation if local translation does not exist
 const { t } = useI18n()
+
+// This is an example composable using @vueuse/core package
+provideExample()
 </script>
 
 <i18n>

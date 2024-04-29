@@ -46,11 +46,13 @@ export default defineConfig({
       external: [
         'vue',
         '@padcom/vue-i18n',
+        '@vueuse/core',
       ],
       output: {
         globals: {
           'vue': 'vue',
           '@padcom/vue-i18n': 'vueI18n',
+          '@vueuse/core': 'vueUseCore',
         },
       },
     },

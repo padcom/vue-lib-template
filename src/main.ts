@@ -6,5 +6,10 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 
-createI18n({})
+createI18n({
+  messages: {
+    pl: { 'Example': 'Przykład' },
+    de: { 'Example': 'Beispiel' },
+  },
+})
 createApp(App).mount('#app')
