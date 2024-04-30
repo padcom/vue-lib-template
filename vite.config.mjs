@@ -29,7 +29,11 @@ export default defineConfig({
     eslint({
       lintOnStart: false,
     }),
-    dts({ insertTypesEntry: true, rollupTypes: true, logLevel: 'error' }),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+      logLevel: 'error',
+    }),
   ],
   resolve: {
     alias: {

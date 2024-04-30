@@ -66,6 +66,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/padcom/vue-lib-template.git"
+    "url": "git+https://github.com/padcom/vue-lib-template.git"
   }
 }
