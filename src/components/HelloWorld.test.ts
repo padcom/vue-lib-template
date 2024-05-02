@@ -3,6 +3,7 @@ import { mount } from '@vue/test-utils'
 import { useI18n } from '@/composables/i18n'
 
 import HelloWorld from './HelloWorld.vue'
+import { provideExample } from '@/composables/example'
 
 describe('HelloWorld component', () => {
   it('works', () => {
@@ -13,6 +14,7 @@ describe('HelloWorld component', () => {
       },
       setup() {
         // this is how you enforce a locale for the component during test
+        provideExample()
         const { locale } = useI18n({})
         locale.value = 'de'
       },
