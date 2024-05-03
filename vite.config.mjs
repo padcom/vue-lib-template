@@ -1,4 +1,5 @@
 /* eslint-env node */
+/*
 import { defineConfig } from 'vitest/config'
 import { fileURLToPath } from 'url'
 
@@ -73,6 +74,24 @@ export default defineConfig({
     coverage: {
       enabled: true,
       reporter: ['text', 'lcov'],
+    },
+  },
+})
+*/
+
+import { defineVueLibConfig } from '@padcom/vite-config-vue-lib'
+import nesting from 'tailwindcss/nesting'
+import tailwindcss from 'tailwindcss'
+
+import pkg from './package.json' assert { type: 'json' }
+
+export default defineVueLibConfig(pkg, {
+  css: {
+    postcss: {
+      plugins: [
+        nesting(),
+        tailwindcss(),
+      ],
     },
   },
 })
