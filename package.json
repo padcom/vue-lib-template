@@ -37,6 +37,7 @@
   "devDependencies": {
     "@padcom/eslint-config-vue": "^0.8.0",
     "@padcom/nano-css-reset": "^0.2.0",
+    "@padcom/rollup-export-dependencies": "^0.0.1",
     "@padcom/vite-plugin-vue-i18n": "^0.6.0",
     "@tailwindcss/typography": "^0.5.12",
     "@vitejs/plugin-vue": "^5.0.4",

@@ -11,7 +11,10 @@ import nesting from 'tailwindcss/nesting'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
+import { dependencies } from '@padcom/rollup-export-dependencies'
 import pkg from './package.json' assert { type: 'json' }
+
+const { external, globals } = dependencies(pkg)
 
 export default defineConfig({
   plugins: [
@@ -47,17 +50,9 @@ export default defineConfig({
     },
     sourcemap: true,
     rollupOptions: {
-      external: [
-        'vue',
-        '@padcom/vue-i18n',
-        '@vueuse/core',
-      ],
+      external,
       output: {
-        globals: {
-          'vue': 'vue',
-          '@padcom/vue-i18n': 'vueI18n',
-          '@vueuse/core': 'vueUseCore',
-        },
+        globals,
       },
     },
   },
