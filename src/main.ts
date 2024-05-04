@@ -12,4 +12,5 @@ createI18n({
     de: { 'Example': 'Beispiel' },
   },
 })
+
 createApp(App).mount('#app')
