@@ -1,16 +1,14 @@
-import { createI18n } from '@padcom/vue-i18n'
 import '@padcom/nano-css-reset'
 import './tailwind.css'
 
 import { createApp } from 'vue'
+import { createI18n } from '@padcom/vue-i18n-kudutsa'
 
 import App from './App.vue'
+import * as messages from './locale'
 
-createI18n({
-  messages: {
-    pl: { 'Example': 'Przykład' },
-    de: { 'Example': 'Beispiel' },
-  },
+const i18n = createI18n({
+  messages,
 })
 
-createApp(App).mount('#app')
+createApp(App).use(i18n).mount('#app')

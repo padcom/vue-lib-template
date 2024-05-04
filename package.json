@@ -38,7 +38,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@padcom/vue-i18n": "^0.6.0",
+    "@padcom/vue-i18n-kudutsa": "^0.0.1",
+    "@padcom/vite-plugin-vue-i18n-kudutsa": "^0.0.1",
     "@vueuse/core": "^10.9.0",
     "vue": "^3.4.25"
   },

@@ -4,7 +4,7 @@ import { useI18n } from './i18n'
 
 function createExample() {
   const { t } = useI18n()
-  const state = ref(t('Example'))
+  const state = ref(t('example'))
 
   return {
     state,
