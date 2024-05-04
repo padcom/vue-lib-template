@@ -13,8 +13,9 @@ describe('HelloWorld component', () => {
         HelloWorld,
       },
       setup() {
-        // this is how you enforce a locale for the component during test
         provideExample()
+
+        // this is how you enforce a locale for the component during test
         const { locale } = useI18n({})
         locale.value = 'de'
       },
