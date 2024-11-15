@@ -1,10 +1,12 @@
 {
-  "name": "@padcom/vuejs-lib-template",
+  "name": "@padcom/vue-lib-template",
   "version": "0.0.1",
   "description": "",
-  "keywords": [],
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "vue"
+  ],
   "homepage": "https://github.com/padcom/vue-lib-template#readme",
   "bugs": {
     "url": "https://github.com/padcom/vue-lib-template/issues"
@@ -18,13 +20,13 @@
     "README.md"
   ],
   "type": "module",
-  "module": "./dist/vuejs-lib-template.js",
-  "main": "./dist/vuejs-lib-template.umd.cjs",
+  "module": "./dist/vue-lib-template.js",
+  "main": "./dist/vue-lib-template.umd.cjs",
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vuejs-lib-template.js",
-      "require": "./dist/vuejs-lib-template.umd.cjs",
+      "import": "./dist/vue-lib-template.js",
+      "require": "./dist/vue-lib-template.umd.cjs",
       "types": "./dist/types.d.ts"
     },
     "./dist/style.css": "./dist/style.css"
@@ -38,26 +40,21 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@padcom/vue-i18n-kudutsa": "^0.0.4",
-    "@padcom/vite-plugin-vue-i18n": "^0.0.4",
-    "@vueuse/core": "^10.9.0",
-    "vue": "^3.4.25"
+    "vue-i18n": "^10.0.4",
+    "@vueuse/core": "^11.2.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@padcom/eslint-config-vue": "^0.8.0",
+    "@padcom/eslint-config-vue": "^0.20.1",
     "@padcom/nano-css-reset": "^0.2.0",
     "@padcom/tsconfig": "^0.0.2",
-    "@padcom/vite-config-vue-lib": "^0.0.8",
-    "@padcom/vite-plugin-vue-i18n-kudutsa": "^0.0.4",
-    "@tailwindcss/typography": "^0.5.13",
-    "@intlify/unplugin-vue-i18n": "^4",
-    "tailwindcss": "^3.4.3",
-    "vite": "^5.2.10",
-    "vitest": "^1.5.2"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@padcom/eslint-config-vue"
-    ]
+    "@padcom/vite-config-vue-lib": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "@intlify/unplugin-vue-i18n": "^5.3.1",
+    "@vitest/coverage-v8": "^2.1.5",
+    "tailwindcss": "^3.4.15",
+    "typescript": "5.4.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
   }
 }

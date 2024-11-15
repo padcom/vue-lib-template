@@ -1,4 +1,5 @@
-/* eslint-disable padding-line-between-statements */
+/* eslint-disable @stylistic/padding-line-between-statements */
+
 import * as translations from './locale'
 export { translations }
 export * from './components'
