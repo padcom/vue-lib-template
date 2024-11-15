@@ -1,4 +1,3 @@
-/* eslint-env node */
 import typography from '@tailwindcss/typography'
 
 import theme from './tailwind.theme'
