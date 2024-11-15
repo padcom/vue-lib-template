@@ -20,13 +20,13 @@
     "README.md"
   ],
   "type": "module",
-  "module": "./dist/vue-lib-template.js",
-  "main": "./dist/vue-lib-template.umd.cjs",
+  "module": "./dist/index.js",
+  "main": "./dist/index.umd.cjs",
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vue-lib-template.js",
-      "require": "./dist/vue-lib-template.umd.cjs",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs",
       "types": "./dist/types.d.ts"
     },
     "./dist/style.css": "./dist/style.css"
@@ -48,10 +48,12 @@
     "@padcom/eslint-config-vue": "^0.20.1",
     "@padcom/nano-css-reset": "^0.2.0",
     "@padcom/tsconfig": "^0.0.2",
+    "@padcom/vite-config-lib": "^0.3.0",
     "@padcom/vite-config-vue-lib": "^0.5.0",
     "@tailwindcss/typography": "^0.5.15",
     "@intlify/unplugin-vue-i18n": "^5.3.1",
     "@vitest/coverage-v8": "^2.1.5",
+    "eslint": "^9.14.0",
     "tailwindcss": "^3.4.15",
     "typescript": "5.4.2",
     "vite": "^5.4.11",
