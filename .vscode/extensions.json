@@ -1,12 +1,10 @@
 {
   "recommendations": [
-    "bradlc.vscode-tailwindcss",
-    "alfredbirk.tailwind-documentation",
-    "hollowtree.vue-snippets",
     "vue.volar",
     "cpylua.language-postcss",
-    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "alfredbirk.tailwind-documentation",
     "dbaeumer.vscode-eslint",
-    "zixuanchen.vitest-explorer"
+    "zixuanchen.vitest-explorer",
   ]
 }
