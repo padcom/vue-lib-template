@@ -1,33 +1,55 @@
 <template>
-  <h1 class="bg-primary-400">{{ t('Hello, world!') }} {{ message }}</h1>
-  <h2>State: {{ state }}</h2>
+  <h1 class="bg-slate-300 text-primary-900">{{ t('messages.hello-world') }} {{ message }}</h1>
+  <h2>State: {{ stateLabel }}</h2>
+  <button @click="state = 'empty'">Empty state</button>
+  <button @click="state = 'example'">Example state</button>
+  <br>
+  <button @click="locale = 'pl'">PL</button>
+  <button @click="locale = 'en'">EN</button>
+  <button @click="locale = 'de'">DE</button>
 </template>
 
 <script lang="ts" setup>
 import { useI18n } from '@/composables/i18n'
-import { useExample } from '@/composables/example'
+import { provideExample } from '@/composables/example'
 
 defineProps({
   message: { type: String, default: 'from HelloWorld.vue' },
 })
 
 const { t } = useI18n()
-const { state } = useExample()
+const { locale } = useI18n({ useScope: 'global' })
+const { state, stateLabel } = provideExample()
 </script>
 
 <i18n>
 {
-  "de": {
-    "Hello, world!": "Hallo Welt!"
+  "en": {
+    "messages": {
+      "hello-world": "Hello, world!"
+    }
   },
   "pl": {
-    "Hello, world!": "Witaj świecie!"
+    "messages": {
+      "hello-world": "Witaj świecie!"
+    }
+  },
+  "de": {
+    "messages": {
+      "hello-world": "Hallo Welt!"
+    }
   }
 }
 </i18n>
 
 <style lang="postcss" scoped>
+@reference '../main.css';
+
+button {
+  @apply btn-primary;
+}
+
 h1 {
-  @apply text-3xl;
+  color: red;
 }
 </style>

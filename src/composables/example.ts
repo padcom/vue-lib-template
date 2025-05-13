@@ -1,13 +1,15 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { createInjectionState } from '@vueuse/core'
 import { useI18n } from './i18n'
 
 function createExample() {
-  const { t } = useI18n()
-  const state = ref(t('example'))
+  const { t } = useI18n({ useScope: 'global' })
+  const state = ref('empty')
+  const stateLabel = computed(() => t(`state.${state.value}`))
 
   return {
     state,
+    stateLabel,
   }
 }
 

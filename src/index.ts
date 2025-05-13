@@ -1,7 +1,5 @@
-/* eslint-disable @stylistic/padding-line-between-statements */
+import { defineCustomElement } from 'vue'
 
-import * as translations from './locale'
-export { translations }
-export * from './components'
-export * from './composables'
-export * from './lib'
+import HelloWorld from './components/HelloWorld.ce.vue'
+
+customElements.define('hello-world', defineCustomElement(HelloWorld))

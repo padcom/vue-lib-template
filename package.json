@@ -20,9 +20,6 @@
     "README.md"
   ],
   "type": "module",
-  "module": "./dist/index.js",
-  "main": "./dist/index.umd.cjs",
-  "types": "./dist/types.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
@@ -39,11 +36,6 @@
     "dev": "vite build -w",
     "build": "vite build"
   },
-  "dependencies": {
-    "vue-i18n": "^11",
-    "@vueuse/core": "^13",
-    "vue": "^3.5"
-  },
   "devDependencies": {
     "@padcom/eslint-config-vue": "0.20.1",
     "@padcom/nano-css-reset": "0.3.0",
@@ -52,11 +44,12 @@
     "@padcom/vite-config-lib": "0.11.0",
     "@padcom/vite-config-vue": "0.14.1",
     "@padcom/vite-config-vue-lib": "0.11.0",
-    "@tailwindcss/typography": "^0.5.15",
-    "@intlify/unplugin-vue-i18n": "^5.3.1",
-    "eslint": "^9.14.0",
-    "tailwindcss": "^3.4.15",
+    "eslint": "9.26.0",
     "typescript": "5.8.3",
-    "vite": "6.3.5"
+    "vite": "6.3.5",
+
+    "@vueuse/core": "13.1.0",
+    "vue": "3.5.13",
+    "vue-i18n": "11.1.3"
   }
 }
