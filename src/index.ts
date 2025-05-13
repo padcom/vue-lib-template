@@ -1,5 +1,11 @@
 import { defineCustomElement } from 'vue'
 
-import HelloWorld from './components/HelloWorld.ce.vue'
+import HelloWorldCe from './components/HelloWorld.ce.vue'
 
-customElements.define('hello-world', defineCustomElement(HelloWorld))
+class HelloWorld extends defineCustomElement(HelloWorldCe) {
+  // do low-level custom element stuff here
+}
+
+if (!customElements.get('hello-world')) {
+  customElements.define('hello-world', HelloWorld)
+}

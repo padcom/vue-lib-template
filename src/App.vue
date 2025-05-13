@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.ce.vue'
 import { useI18n } from '@/composables/i18n'
 import { provideExample } from '@/composables/example'
 

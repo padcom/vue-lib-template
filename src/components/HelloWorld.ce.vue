@@ -1,5 +1,5 @@
 <template>
-  <button>Hello, world!</button>
+  <button class="btn-primary">Hello, world!</button>
 </template>
 
 <script lang="ts" setup>
@@ -23,14 +23,9 @@ defineOptions({
 
 <style lang="postcss">
 @import '@padcom/nano-css-reset';
-@reference './main.css'
+@import '../main.css';
 
 :host {
   display: block;
-}
-
-button {
-  @apply .btn-primary;
-  @apply bg-bg-slate-300;
 }
 </style>
