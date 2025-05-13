@@ -1,5 +1,5 @@
 {
-  "name": "@padcom/vue-lib-template",
+  "name": "@padcom/vue-wc-lib-template",
   "version": "0.0.1",
   "description": "",
   "author": "Matthias Hryniszak <padcom@gmail.com>",
@@ -40,9 +40,6 @@
     "@padcom/eslint-config-vue": "0.20.1",
     "@padcom/nano-css-reset": "0.3.0",
     "@padcom/tsconfig": "0.0.3",
-    "@padcom/vite-config-default": "0.11.0",
-    "@padcom/vite-config-lib": "0.11.0",
-    "@padcom/vite-config-vue": "0.14.1",
     "@padcom/vite-config-vue-lib": "0.11.0",
     "eslint": "9.26.0",
     "typescript": "5.8.3",
