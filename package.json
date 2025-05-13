@@ -25,9 +25,9 @@
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs",
-      "types": "./dist/types.d.ts"
+      "require": "./dist/index.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -40,23 +40,23 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue-i18n": "^10.0.4",
-    "@vueuse/core": "^11.2.0",
-    "vue": "^3.5.13"
+    "vue-i18n": "^11",
+    "@vueuse/core": "^13",
+    "vue": "^3.5"
   },
   "devDependencies": {
-    "@padcom/eslint-config-vue": "^0.20.1",
-    "@padcom/nano-css-reset": "^0.2.0",
-    "@padcom/tsconfig": "^0.0.2",
-    "@padcom/vite-config-lib": "^0.3.0",
-    "@padcom/vite-config-vue-lib": "^0.5.0",
+    "@padcom/eslint-config-vue": "0.20.1",
+    "@padcom/nano-css-reset": "0.3.0",
+    "@padcom/tsconfig": "0.0.3",
+    "@padcom/vite-config-default": "0.11.0",
+    "@padcom/vite-config-lib": "0.11.0",
+    "@padcom/vite-config-vue": "0.14.1",
+    "@padcom/vite-config-vue-lib": "0.11.0",
     "@tailwindcss/typography": "^0.5.15",
     "@intlify/unplugin-vue-i18n": "^5.3.1",
-    "@vitest/coverage-v8": "^2.1.5",
     "eslint": "^9.14.0",
     "tailwindcss": "^3.4.15",
-    "typescript": "5.4.2",
-    "vite": "^5.4.11",
-    "vitest": "^2.1.5"
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
   }
 }
