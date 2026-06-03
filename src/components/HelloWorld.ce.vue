@@ -1,5 +1,5 @@
 <template>
-  <button class="btn-primary">Hello, world!</button>
+  <button class="btn-primary" @click="console.log('Hello!')">Hello, world!</button>
 </template>
 
 <script lang="ts" setup>
