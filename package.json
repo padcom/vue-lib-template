@@ -36,19 +36,19 @@
     "dev": "vite build -w",
     "build": "vite build"
   },
+  "devDependencies": {
+    "@microsoft/api-extractor": "7.60.1",
+    "@padcom/eslint-config-vue": "0.21.2",
+    "@padcom/tsconfig": "0.0.3",
+    "@padcom/vite-config-vue-lib": "0.11.0",
+    "eslint": "^10",
+    "typescript": "5.9.3",
+    "vite": "^8"
+  },
   "peerDependencies": {
     "@padcom/nano-css-reset": "0.3.0",
     "@vueuse/core": ">=10.8",
     "vue": "^3.5",
-    "vue-i18n": ">12"
-  },
-  "devDependencies": {
-    "@microsoft/api-extractor": "7.52.6",
-    "@padcom/eslint-config-vue": "0.21.2",
-    "@padcom/tsconfig": "0.0.3",
-    "@padcom/vite-config-vue-lib": "0.11.0",
-    "eslint": "10.15.0",
-    "typescript": "5.9.3",
-    "vite": "^8"
+    "vue-i18n": ">10"
   }
 }
