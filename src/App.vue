@@ -1,17 +1,18 @@
 <template>
-  <HelloWorld message="from library" />
+  <Counter />
   <p class="note">{{ t('Now, delete me and get to work!') }}</p>
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.ce.vue'
-import { useI18n } from '@/composables/i18n'
-import { provideExample } from '@/composables/example'
+import { useI18n } from 'vue-i18n'
+import Counter from './components/Counter.vue'
+
+import { provideCounter } from './composables/counter'
 
 const { t } = useI18n({ useScope: 'global' })
 
 // This is an example composable using @vueuse/core package
-provideExample()
+provideCounter()
 </script>
 
 <style lang="postcss" scoped>
